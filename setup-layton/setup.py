@@ -50,11 +50,13 @@ def Initialize_pip():
     print("Installing...")
     # Installing all modules
     os.system('pip install time')
-    os.system('pip install flask')
+    os.system('pip install Flask')
     os.system('pip install webbrowser')
     os.system('pip install requests')
     os.system('pip install re')
     os.system('pip install discord_webhook')
+    os.system('pip install socket')
+    os.system('pip intall colorama')
     os.system('clear')
     print('[+] All modules are installed, please run layton.py file to run the program !')
         
@@ -68,6 +70,8 @@ def Initialize_pip3():
     os.system('pip3 install requests')
     os.system('pip3 install re')
     os.system('pip3 install discord_webhook')
+    os.system('pip3 install socket')
+    os.system('pip3 intall colorama')
     os.system('clear')
     print('[+] All modules are installed, please run layton.py file to run the program !')
 
