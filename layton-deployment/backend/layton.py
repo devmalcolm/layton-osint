@@ -13,6 +13,7 @@ import os
 import requests
 import re
 import webbrowser as WB
+from colorama import Fore, Back, Style
 
 from config import __laytonVersion__
 from config import __updateTrue__
@@ -22,6 +23,7 @@ from config import localhost
 from config import github_lnk
 from config import termsCond
 from config import raw_github
+from config import __updateTrueErr__
 
 
 class laytonCheck:
@@ -33,6 +35,7 @@ class laytonCheck:
         self.github = github_lnk
         self.terms = termsCond
         self.RG = raw_github
+        self.updateTrueErr = __updateTrueErr__
         # self.newer_Version = str(re.findall('__laytonVersion__ = "(.*)"', _r.text[0]))
 
     def terms_conditions(self):
@@ -47,10 +50,10 @@ class laytonCheck:
 
 Github: @zaqoQLF
             """)
-            print("{}".format(self.terms))
+            print(Fore.RED + "{}".format(self.terms) + Style.RESET_ALL)
             print('\n')
             terms_input = input(
-                '[+] Do you agree with the terms & conditions ? y/n ~# ')
+                f'[{Fore.GREEN}+{Style.RESET_ALL}] Do you agree with the terms & conditions ? y/n ~# ')
             print('\n')
             if terms_input == 'y':
                 L = laytonCheck()
@@ -64,10 +67,12 @@ Github: @zaqoQLF
                 continue
 
     def check_versionParser(self):
-        os.system('clear')
+        os.system('cls')
         # checking for newer version of Layton
-        print('[+] Checking for updates...')
-        time.sleep(2)
+        print(f'[{Fore.GREEN}+{Style.RESET_ALL}] - Retrieving Layton Version Informations...')
+        time.sleep(3)
+        print(f'[{Fore.GREEN}+{Style.RESET_ALL}] - Checking For Layton Updates...')
+        time.sleep(3)
         try:
             r = requests.get(
                 # Requesting the raw content of the script on github
@@ -102,11 +107,15 @@ Github: @zaqoQLF
         # sleeping 2 seconds cause im tired
         time.sleep(2)
         os.system('cls')
-        print("[+] Please wait, server are starting...")
+        print(f"[{Fore.YELLOW}+{Style.RESET_ALL}] Please Wait, Server Is Starting...")
+        print(f"[{Fore.YELLOW}+{Style.RESET_ALL}] - Server Status : {Back.YELLOW} STARTING... {Style.RESET_ALL}\n")
         # proceed to app.py to initiate the flask application
+        time.sleep(5)
+        print("<-------->\n")
+        print(f"[{Fore.GREEN}+{Style.RESET_ALL}] - Server Status : {Back.GREEN} ONLINE {Style.RESET_ALL}")
         time.sleep(3)
-        print("[+] If the window don't open automatically, open it manually : http://127.0.0.1:5000/dashboard")
-        print("[+] Localhost server is online !")
+        print(f"[{Fore.GREEN}+{Style.RESET_ALL}] If the window don't open automatically, open it manually : {Fore.WHITE} {Back.GREEN} http://127.0.0.1:5000/dashboard {Style.RESET_ALL} \n")
+        print("<-------->\n")
         # open a new tab with the localhost url
         WB.open_new('{}'.format(localhost))
         # run the app.py file by running this flask command
@@ -117,17 +126,17 @@ Github: @zaqoQLF
         while True:
             os.system('cls')
             time.sleep(3)
-            print("{}".format(self.updateTrue))
+            print(" {} \n\n {}".format(self.updateTrueErr, self.updateTrue))
             print("\n")
             print("Current version : " + self.LV)
             print("Newest version : " + __newerVersion__)
             time.sleep(2)
             print("\n")
             x = input(
-                "[+] Do you want to get redirected to the github page ? y/n ~# ")
+                f"[{Fore.GREEN}+{Style.RESET_ALL}] Do you want to get redirected to the github page ? y/n ~# ")
             if x == 'y':
                 print("\n")
-                print("[+] Redirecting...")
+                print(f"[{Fore.GREEN}+{Style.RESET_ALL}] Redirecting...")
                 time.sleep(2)
                 WB.open_new('{}'.format(self.github))
                 break
