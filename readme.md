@@ -99,6 +99,7 @@ pip install requests
 pip install re
 pip install webbrowser
 pip install discord_webhook
+pip install colorama
 ```
 
 ## 🚀 Running Program
