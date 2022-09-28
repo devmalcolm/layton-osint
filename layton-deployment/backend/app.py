@@ -10,7 +10,7 @@ try:
 except:
     print("An Error occured")
 # Put your webhook url here 
-discord_webhookURL = DiscordWebhook("https://discord.com/api/webhooks/1024004410004754555/uALb5rGNWwYJxpI011h6sAFTbHu9VMwIeVkcC8OXNM8aHJ5zOc1RuEW1unmRypWICn5Y")
+discord_webhookURL = DiscordWebhook(" YOUR WEBHOOK HERE ")
 
 __data__ = Flask(__name__)
 
