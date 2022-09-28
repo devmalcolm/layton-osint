@@ -78,7 +78,7 @@ Important, you should have the version 3.x of Python installed
 
 - Clone this repository
 ```sh
-git clone https://github.com/zaqoQLF/layton.git
+git clone https://github.com/zaqoQLF/layton-osint.git
 ```
 
 - Install the requirements
