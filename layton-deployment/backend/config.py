@@ -23,7 +23,7 @@ github_lnk = "https://github.com/zaqoQLF/layton-osint"
 localhost = 'http://127.0.0.1:5000/dashboard'
 
 # Github Raw Version of the config file (To compare version)
-raw_github = "https://raw.githubusercontent.com/zaqoQLF/layton-osint/master/layton-deployment/backend/config.py?token=GHSAT0AAAAAABYUUJWXNHJJP4HD5KP2O5XOYZTRLEQ"
+raw_github = "https://raw.githubusercontent.com/zaqoQLF/layton-osint/master/layton-deployment/backend/config.py"
 
 termsCond = """
 
