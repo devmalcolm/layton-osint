@@ -28,6 +28,6 @@ raw_github = "https://raw.githubusercontent.com/zaqoQLF/layton-osint/master/layt
 termsCond = """
 
 I remind you that this script is for educational purposes only, please run this script on consenting people
-
 By continuing, you agree to the terms above.
+
 """
