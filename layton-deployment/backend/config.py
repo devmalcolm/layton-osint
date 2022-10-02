@@ -3,7 +3,7 @@ import time
 from colorama import Fore, Style, Back
 
 # version of layton (to compare to the built-in one)
-__laytonVersion__ = "0.0.2"
+__laytonVersion__ = "0.0.3"
 
 # message for update
 __updateTrueErr__ = f"[{Fore.RED}-{Style.RESET_ALL}] {Fore.WHITE}{Back.RED} INVALID VERSION OF LAYTON {Style.RESET_ALL}"
