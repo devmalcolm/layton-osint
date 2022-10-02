@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
+body {
+    background-color: rgb(32, 33, 38);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    width: 200px;
+    cursor: pointer;
+    margin-right: auto;
+}
+li, a, button {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.InputUsername {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 750px;
+    height: 70px;
+    font-size: 20px;
+    font-family: "Poppins";
+    text-align: center;
+    margin-top: 70px;
+    border-radius: 15px;
+    border: none;
+}
+.sent {
+    font-family: "Poppins";
+    text-align: center;
+    font-size: 150px;
+    color: white;
+    margin-top: 200px;
+}
+
+.para-sent {
+    font-family: "Poppins";
+    text-align: center;
+    font-size: 30px;
+    color: rgb(255, 78, 78);
+    margin-top: 50px;
+}
+
+.para-sent2 {
+    font-family: "Poppins";
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin-top: 50px;
+}
+
+#tasks .task {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(38, 39, 45);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+#tasks .task .content .text {
+    color: white;
+    font-size: 100px;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.ResultList {    
+    display: flex;
+    margin-top: 5px;
+}
+
+
+
+main {
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ImgHunt {
+    width: 800px;
+    cursor: pointer;
+    margin-right: auto;
+    display: block;
+    margin-top: 100px;
+    margin-left: auto;
+}
+
+.LittleText{
+    font-family: "Poppins";
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 360px;
+    margin-top: 30px;
+    color: white;
+}
+.LenText {
+    font-family: "Poppins";
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 360px;
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+}
+.SubmitButton {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 25px;
+    width: 750px;
+    height: 70px;
+    border-radius: 15px;
+} 
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    box-shadow: 0px 2px 0px rgba(0,0,0,0.1);
+    background-color: #24252A  ;
+}
+
+.nav__links {
+    list-style: none;
+} 
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+.MainLogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    width: 1300px;
+}
+
+.MainButton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 160px;
+    width: 450px;
+    height: 70px;
+
+}  
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: rgb(255, 255, 255, 0.5);
+}
+
+button {
+    padding: 5px 25px;
+    background-color: rgb(255, 78, 78);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(255, 78, 78, 0.5);
+}
