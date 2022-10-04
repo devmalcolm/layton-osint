@@ -88,7 +88,6 @@ Github: @zaqoQLF
             __localVersion__ = self.LV
 
             if __newerVersion__ != __localVersion__:
-                pass
                 # False so update the version of layton
                 N = laytonCheck()
                 N.update_package(__newerVersion__)
